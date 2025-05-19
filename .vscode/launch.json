@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EcoMarketSpaApplication<EcoMarketSpa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ProyecOne.EcoMarketSpa.EcoMarketSpaApplication",
+            "projectName": "EcoMarketSpa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
