@@ -15,11 +15,14 @@ public class UsuarioController {
 
     @PostMapping("/crear")
     public String crearUsuario(@RequestParam String email,
-                               @RequestParam String password) {
+                               @RequestParam String password,
+                               @RequestParam String username) {
         Usuario usuario = new Usuario();
         usuario.setEmail(email);
         usuario.setPassword(password);
+        usuario.setUsername(username);
         usuarioRepository.save(usuario);
+        
         return "redirect:/index.html";
     }
 }
